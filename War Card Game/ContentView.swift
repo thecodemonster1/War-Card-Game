@@ -75,8 +75,8 @@ struct ContentView: View {
     
     func deal(){
         // rendomize the player card
-        var playerCardValue = Int.random(in: 2...14) // actually range is 2 - 13 (not include 14)
-        var cpuCardValue = Int.random(in: 2...14)
+        let playerCardValue = Int.random(in: 2...14) // actually range is 2 - 13 (not include 14)
+        let cpuCardValue = Int.random(in: 2...14)
         playerCard = "card" + String(playerCardValue)
         
         // rendomize the cpu card
